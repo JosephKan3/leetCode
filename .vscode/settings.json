@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "vector": "cpp",
+    "algorithm": "cpp",
+    "iostream": "cpp",
+    "stack": "cpp",
+    "unordered_set": "cpp"
+  }
+}

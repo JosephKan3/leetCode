@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build main.cpp",
+      "type": "shell",
+      "command": "C:/msys64/mingw64/bin/g++",
+      "args": [
+        "-g",
+        "${fileDirname}/main.cpp", // Use the current file's directory
+        "-o",
+        "${fileDirname}/main.out" // Output to the same directory
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Generated task to build C++ file"
+    }
+  ]
+}
