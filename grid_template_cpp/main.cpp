@@ -20,64 +20,7 @@ using namespace std;
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
-        // Empty = 0
-        // Fresh = 1
-        // Rot = 2
-
-        int minutes = 0;
-        queue<tii> rot_queue;
-        int fresh_count = 0;
-        int last_time = 0;
-
-        int y_len = grid.size();
-        int x_len = grid[0].size();
-
-        for (int y = 0; y < y_len; y++) {
-          for (int x = 0; x < x_len; x++) {
-            if (grid[y][x] == 2) {
-              rot_queue.push({x, y, 0});
-            } else if (grid[y][x] == 1) {
-              fresh_count++;
-            }
-          }
-        }
-
-        // x, y
-        vector<pair<int, int>> directions = {
-          {-1, 0}, {0, 1}, {1, 0}, {0, -1}
-        };
-
-        while (not rot_queue.empty()) {
-          tii curr = rot_queue.front();
-          rot_queue.pop();
-          last_time = get<2>(curr);
-
-          for (const auto& [x_change, y_change] : directions) {
-            int new_x = get<0>(curr) + x_change;
-            int new_y = get<1>(curr) + y_change;
-
-            if (new_x >= 0 & new_x < x_len & new_y >= 0 & new_y < y_len) {
-              int adjacent_value = grid[new_y][new_x];
-              if (adjacent_value == 1) {
-                grid[new_y][new_x] = 2;
-                fresh_count--;
-                rot_queue.push({new_x, new_y, last_time + 1});
-              }
-            }
-          }
-
-
-
-        }
-
-        if (fresh_count == 0) {
-          return last_time;
-        } else {
-          return -1;
-        }
-
-
-
+      return -1;
     }
 };
 
