@@ -99,8 +99,8 @@ int main()
     vector<string> nodes = parseTreeInput(test_case.treeInput);
     TreeNode *root = constructTree(nodes);
 
-    int result = solution.pathSum(root, test_case.targetSum);
     cout << "Input: " << test_case.treeInput << ", TargetSum: " << test_case.targetSum;
+    auto result = solution.pathSum(root, test_case.targetSum);
     cout << "\nResult: " << result << "\n\n";
   }
 

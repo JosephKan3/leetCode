@@ -72,8 +72,8 @@ int main()
 
   for (auto &test_case : test_cases)
   {
-    vector<int> result = solution.closestPrimes(test_case.left, test_case.right);
     cout << "left: " << test_case.left << " right: " << test_case.right;
+    auto result = solution.closestPrimes(test_case.left, test_case.right);
     cout << "\nResult: " << vectorToString(result) << "\n\n";
   }
 

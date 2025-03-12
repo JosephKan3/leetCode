@@ -73,8 +73,8 @@ int main()
 
   for (auto &test_case : test_cases)
   {
-    long long result = solution.orangesRotting(test_case.grid);
     cout << "k: " << gridToString(test_case.grid);
+    auto result = solution.orangesRotting(test_case.grid);
     cout << "\nResult: " << result << "\n\n";
   }
 

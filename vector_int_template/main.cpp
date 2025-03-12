@@ -109,8 +109,8 @@ int main()
 
   for (auto &test_case : test_cases)
   {
-    int result = solution.search(test_case.arr, test_case.target);
     cout << "k: " << vectorToString(test_case.arr) << "target: " << test_case.target;
+    auto result = solution.search(test_case.arr, test_case.target);
     cout << "\nResult: " << result << "\n\n";
   }
 

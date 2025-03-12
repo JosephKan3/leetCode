@@ -106,8 +106,8 @@ int main()
     ListNode *root1 = constructLL(test_case.l1);
     ListNode *root2 = constructLL(test_case.l2);
 
-    ListNode* result = solution.addTwoNumbers(root1, root2);
     cout << "Input: " << "l1: " << linkedListToString(root1) << ", l2: " << linkedListToString(root2) << endl;
+    auto result = solution.addTwoNumbers(root1, root2);
     cout << "\nResult: " << linkedListToString(result) << "\n\n";
   }
 

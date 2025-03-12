@@ -79,8 +79,8 @@ int main()
 
   for (auto &test_case : test_cases)
   {
-    vector<vector<int>> result = solution.threeSum(test_case.nums);
     cout << "k: " << vectorToString(test_case.nums);
+    auto result = solution.threeSum(test_case.nums);
     cout << "\nResult: " << gridToString(result) << "\n\n";
   }
 
